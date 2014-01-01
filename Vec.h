@@ -30,28 +30,28 @@ namespace Libvec {
 template<class T>
 class Math {
 public:
-	static T sqrt(T root);
-	static T sin(T val);
-	static T cos(T val);
-	static T tan(T val);
-	static T asin(T val);
-	static T acos(T val);
-	static T atan(T val);
+    static T sqrt(T root);
+    static T sin(T val);
+    static T cos(T val);
+    static T tan(T val);
+    static T asin(T val);
+    static T acos(T val);
+    static T atan(T val);
 
 private:
-	Math<T>();
+    Math<T>();
 };
 
 #define F_PI 3.14159f
 
 inline float DegreeToRadians(float deg)
 {
-	return (deg * F_PI) / 180.0f;
+    return (deg * F_PI) / 180.0f;
 }
 
 inline double DegreeToRadians(double deg)
 {
-	return (deg * F_PI) / 180.0f;
+    return (deg * F_PI) / 180.0f;
 }
 
 /* specialization for float,double */
@@ -60,86 +60,86 @@ inline double DegreeToRadians(double deg)
 template <>
 inline float Math<float>::sqrt(float root)
 {
-	return ::sqrtf(root);
+    return ::sqrtf(root);
 }
 
 template <>
 inline float Math<float>::sin(float root)
 {
-	return ::sinf(root);
+    return ::sinf(root);
 }
 
 template <>
 inline float Math<float>::cos(float root)
 {
-	return ::cosf(root);
+    return ::cosf(root);
 }
 
 template <>
 inline float Math<float>::tan(float root)
 {
-	return ::tanf(root);
+    return ::tanf(root);
 }
 
 template <>
 inline float Math<float>::asin(float root)
 {
-	return ::asinf(root);
+    return ::asinf(root);
 }
 
 template <>
 inline float Math<float>::acos(float root)
 {
-	return ::acosf(root);
+    return ::acosf(root);
 }
 
 template <>
 inline float Math<float>::atan(float root)
 {
-	return ::atanf(root);
+    return ::atanf(root);
 }
 
 /* double */
 template <>
 inline double Math<double>::sqrt(double root)
 {
-	return ::sqrt(root);
+    return ::sqrt(root);
 }
 
 template <>
 inline double Math<double>::sin(double root)
 {
-	return ::sin(root);
+    return ::sin(root);
 }
 
 template <>
 inline double Math<double>::cos(double root)
 {
-	return ::cos(root);
+    return ::cos(root);
 }
 
 template <>
 inline double Math<double>::tan(double root)
 {
-	return ::tan(root);
+    return ::tan(root);
 }
 
 template <>
 inline double Math<double>::asin(double root)
 {
-	return ::asin(root);
+    return ::asin(root);
 }
 
 template <>
 inline double Math<double>::acos(double root)
 {
-	return ::acos(root);
+    return ::acos(root);
 }
 
 template <>
 inline double Math<double>::atan(double root)
 {
-	return ::atan(root);
+    return ::atan(root);
 }
 
 }
